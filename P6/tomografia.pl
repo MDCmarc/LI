@@ -26,7 +26,7 @@ ejemplo3( [11,5,4], [3,2,3,1,1,1,1,2,3,2,1] ).
 
 
 main:-	
-	ejemplo3(RowSums,ColSums),
+	ejemplo1(RowSums,ColSums),
 	length(RowSums,NumRows),
 	length(ColSums,NumCols),
 	NVars is NumRows*NumCols,
@@ -39,7 +39,7 @@ main:-
 	checkSum(MatrixByRows, RowSums),
 	checkSum(MatrixByCols, ColSums),
 
-	label(L),
+	labeling([ff],L),
 
 	pretty_print(RowSums,ColSums,MatrixByRows).
 
